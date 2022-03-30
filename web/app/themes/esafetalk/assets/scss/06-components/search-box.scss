@@ -1,0 +1,31 @@
+.search-box {
+  margin: 50px auto;
+  max-width: 500px;
+
+  > input {
+    background-color: $white-900;
+
+    &::placeholder {
+      color: rgba(45, 57, 64, 0.5);
+    }
+  }
+
+  .button {
+    border-radius: 8px;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .search-box {
+    display: flex;
+    align-items: center;
+    float: right;
+    width: 750px;
+
+    > input {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  }
+}

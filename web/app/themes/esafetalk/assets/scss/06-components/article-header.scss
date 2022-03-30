@@ -1,0 +1,36 @@
+.article-header {
+  padding: 60px 16px;
+  text-align: center;
+
+  h2 {
+    margin: 30px 0 40px;
+  }
+}
+
+.article-header__bg {
+  @extend .agreements__bg;
+}
+
+.article-header__details {
+  @extend .blog-card__details;
+  position: relative;
+  top: 0;
+  justify-content: center;
+}
+
+.article-header__image {
+  max-width: 1100px;
+  margin: 0 auto;
+  line-height: 0;
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article-header {
+    padding: 60px 0;
+  }
+}

@@ -1,0 +1,93 @@
+// Company Info
+.company__info {
+  position: relative;
+  top: 0;
+  padding-bottom: 50px;
+  transition: all 200ms ease;
+
+  > h2 {
+    margin-bottom: 30px;
+    letter-spacing: -0.03em;
+    text-align: center;
+  }
+
+  > div > p {
+    color: $teal-800;
+    font-size: $size-content;
+    font-weight: $weight-medium;
+  }
+}
+
+.company__info > div > div {
+  display: block;
+  margin-top: 30px;
+  transition: all 200ms ease;
+
+  > p {
+    font-size: $size-content-xxsmall;
+    line-height: 1.8em;
+  }
+
+  > p:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  // Company Info
+  .company__info {
+    > h2 {
+      margin-bottom: 45px;
+    }
+  }
+
+  .company__info > div > div {
+    display: flex;
+    justify-content: space-between;
+
+    > p {
+      width: calc(50% - 20px);
+      font-size: $size-content-xsmall;
+    }
+
+    > p:first-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  // Company Info
+  .company__info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 75px;
+
+    > h2 {
+      max-width: 240px;
+      text-align: left;
+    }
+
+    > div {
+      max-width: 650px;
+    }
+
+    > div > div > p {
+      font-size: $size-content-small;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  // Company Info
+  .company__info > div {
+    max-width: 750px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  // Company Info
+  .company__info > div {
+    max-width: 850px;
+  }
+}

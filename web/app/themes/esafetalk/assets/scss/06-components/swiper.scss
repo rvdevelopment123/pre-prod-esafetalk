@@ -1,0 +1,75 @@
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+  margin-top: 0;
+  top: 20%;
+  transition: all 200ms ease;
+
+  &::after {
+    color: $teal-800;
+    background-color: transparent;
+    border: 3px solid $teal-800;
+    border-radius: 100%;
+    font-size: $size-content;
+    font-weight: $weight-semibold;
+    transition: all 200ms ease;
+  }
+
+  &:hover::after {
+    color: $white-900;
+    background-color: $teal-900;
+    border: 3px solid $teal-700;
+  }
+}
+
+.swiper-button-next {
+  &::after {
+    padding: 10px 15px 10px 16px;
+  }
+}
+
+.swiper-button-prev {
+  &::after {
+    padding: 10px 16px 10px 15px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $teal-700;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: inline-block;
+    top: 50%;
+  }
+
+  .swiper-button-next {
+    right: 50px;
+  }
+
+  .swiper-button-prev {
+    left: 32px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .swiper-button-next {
+    right: 188px;
+  }
+
+  .swiper-button-prev {
+    left: 170px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .swiper-button-next {
+    right: 230px;
+  }
+
+  .swiper-button-prev {
+    left: 212px;
+  }
+}

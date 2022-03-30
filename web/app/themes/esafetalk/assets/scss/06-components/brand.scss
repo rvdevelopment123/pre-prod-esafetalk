@@ -1,0 +1,136 @@
+.brand-section {
+  padding: 60px 0;
+  width: 100%;
+  background-color: $teal-500;
+}
+
+.brand__contents {
+  padding-bottom: 30px;
+
+  h2 {
+    padding-bottom: 30px;
+  }
+}
+
+// Brand Anatomy
+.brand__anatomy {
+  margin-top: 40px;
+  padding-left: 20px;
+  font-size: $size-content-xxsmall;
+
+  p {
+    line-height: 1.8em;
+  }
+
+  span {
+    display: block;
+    margin: 20px 0 10px;
+    font-size: $size-content-xsmall;
+    font-weight: $weight-semibold;
+  }
+}
+
+// Dialogue
+.anatomy__dialogue {
+  margin-bottom: 45px;
+
+  span {
+    color: $teal-700;
+  }
+}
+
+.dialogue__icon {
+  width: 38px;
+  line-height: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+// Hope
+.anatomy__hope {
+  span {
+    color: $ink-900;
+  }
+}
+.hope__icon {
+  width: 32px;
+  line-height: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+// Brand Logo
+.brand__logo {
+  display: none;
+  max-width: 145px;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .brand__anatomy {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-left: 0;
+
+    > div {
+      max-width: calc(50% - 30px);
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand__contents {
+    max-width: calc(75% - 40px);
+
+    > p {
+      font-size: $size-content-small;
+      line-height: 1.8em;
+    }
+  }
+
+  .brand__anatomy > div {
+    > p {
+      font-size: $size-content-xsmall;
+    }
+
+    span {
+      font-size: $size-content;
+    }
+  }
+
+  .brand__logo {
+    display: inline-block;
+  }
+}
+
+@media  screen and (min-width: 1440px) {
+  .brand {
+    justify-content: flex-start;
+  }
+
+  .brand__contents {
+    margin-right: 200px;
+    max-width: 670px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .brand__contents {
+    margin-right: 300px;
+    max-width: 850px;
+  }
+}

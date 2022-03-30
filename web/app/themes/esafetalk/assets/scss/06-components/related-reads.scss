@@ -1,0 +1,17 @@
+.related-reads-section {
+  width: 100%;
+  padding: 50px 0;
+  background: linear-gradient(180deg, rgba(240, 247, 246, 0) 0%, #F0F7F6 25.44%);
+}
+
+@media screen and (min-width: 768px) {
+  .related-reads-section .blog-cards .blog-card:last-child {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .related-reads-section .blog-cards .blog-card:last-child {
+    margin: 0;
+  }
+}

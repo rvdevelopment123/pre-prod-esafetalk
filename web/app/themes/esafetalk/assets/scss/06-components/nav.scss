@@ -1,0 +1,161 @@
+// Burger
+.nav__burger {
+  margin: 5px 0 0 15px;
+  padding: 10px 0 10px 10px;
+  display: inline-block;
+  transition: all 200ms ease;
+
+  span {
+    margin-bottom: 5px;
+    display: block;
+    width: 26px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: $ink-800;
+  }
+
+  span:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.nav__burger.nav__burger--toggled {
+  margin-top: 12px;
+
+  span:first-child {
+    transform: rotate(45deg);
+  }
+
+  span:nth-child(2) {
+    margin-top: -8px;
+    transform: rotate(-45deg);
+  }
+
+  span:last-child {
+    display: none;
+  }
+}
+
+// Nav Menu
+.nav__menu {
+  position: absolute;
+  top: 50px;
+  left: 100%;
+  padding: 45px 0;
+  width: 100%;
+  display: none;
+  background-color: $white-900;
+  z-index: 10;
+  transition: all 200ms ease;
+
+  > menu {
+    padding-left: 30px;
+    list-style: none;
+  }
+
+  li a {
+    display: inline-block;
+    padding: 10px;
+    line-height: 1em;
+    color: $ink-800;
+    font-family: $font-secondary;
+    font-size: $size-content-large;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+  }
+
+  .border {
+    display: block;
+    margin: 25px 40px;
+    border: 1px solid rgba(45,57,64,0.1) ;
+  }
+}
+
+.nav__agreements {
+  display: block;
+  padding-left: 35px;
+
+  > a {
+    display: block;
+    padding: 5px;
+    color: $ink-800;
+    font-size: $size-content-xsmall;
+    text-decoration: none;
+  }
+}
+
+.nav__menu.nav__menu--open {
+  left: 0;
+  display: block;
+}
+
+@media screen and (min-width: 425px) {
+  .nav__menu li a {
+    font-size: $size-heading-xsmall;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__menu.nav__menu--open {
+    left: -30px;
+    width: calc(100% + 60px)
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__burger {
+    display: none;
+  }
+
+  .nav__menu,
+  .nav__menu.nav__menu--open {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-right: 10px;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+
+    menu {
+      display: flex;
+      padding-left: 0;
+    }
+
+    .border {
+      display: none;
+    }
+  }
+
+  .nav__agreements {
+    display: none;
+  }
+
+  .nav__menu li a {
+    position: relative;
+    font-family: $font-primary;
+    font-size: $size-content-xsmall;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 1em;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      height: 2px;
+      background-color: $teal-700;
+      opacity: 0;
+      transition: all 200ms ease;
+    }
+  }
+
+  .nav__menu li a:hover {
+    &::after {
+      top: 2em;
+      opacity: 1;
+    }
+  }
+
+}

@@ -1,0 +1,169 @@
+footer {
+  background-color: $teal-500;
+  padding: 30px 0 50px;
+}
+
+.footer__main {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(44,87,110,0.15);
+}
+
+.footer__logo-icon {
+  display: none;
+  margin-right: 150px;
+  width: 28px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__links ul,
+.footer__copyright ul {
+  padding-left: 0;
+  list-style: none;
+  transition: all 200ms ease;
+
+  a {
+    color: $ink-800;
+    font-weight: $weight-medium;
+    transition: all 200ms ease;
+  }
+
+  a:hover {
+    color: $teal-700;
+  }
+}
+
+.footer__socials {
+  margin-top: 30px;
+
+  p {
+    color: $teal-700;
+    font-size: $size-content-xxsmall;
+    font-weight: $weight-semibold;
+    text-transform: uppercase;
+  }
+}
+
+.footer__socials ul {
+  display: flex;
+  margin-top: 30px;
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    margin-right: 15px;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__logo {
+  width: 140px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.copyright__text p {
+  margin: 20px 0 30px;
+  color: $ink-800;
+}
+
+.footer__copyright ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 425px) {
+  .footer__links {
+    justify-content: flex-start;
+
+    ul:first-child {
+      margin-right: 120px;
+    }
+  }
+
+  .footer__copyright ul {
+    justify-content: flex-start;
+
+    li:first-child {
+      margin-right: 120px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__main {
+    display: flex;
+    margin-bottom: 50px;
+    padding-bottom: 60px;
+  }
+
+  .footer__links {
+    border-right: 1px solid rgba(44,87,110,0.15);
+    padding-right: 90px;
+  }
+
+  .footer__socials {
+    margin-top: 0;
+    padding-left: 60px;
+  }
+
+  .copyright__text {
+    display: flex;
+
+    p {
+      margin: 0 0 0 30px;
+    }
+  }
+
+  .footer__copyright ul {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__logo-icon {
+    display: inline-block;
+  }
+
+  .footer__links {
+    padding-right: 150px;
+
+    ul:first-child {
+      margin-right: 150px;
+    }
+  }
+
+  .footer__socials {
+    padding-left: 80px;
+  }
+
+  .footer__copyright {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      margin-left: 30px;
+    }
+
+    ul {
+      margin: 0;
+    }
+
+    ul > li:first-child {
+      margin-right: 30px;
+    }
+  }
+}

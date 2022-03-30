@@ -1,0 +1,31 @@
+.hotline-note {
+  padding: 16px;
+  background-color: $teal-800;
+
+  p {
+    margin: 0 auto;
+    color: $teal-500;
+    font-size: $size-content-xxxsmall;
+    font-weight: $weight-regular;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  a {
+    color: $white-900;
+    font-weight: $weight-medium;
+    border-bottom: 2px solid $teal-700;
+    transition: all 200ms ease;
+  }
+
+  a:hover {
+    color: $white-800;
+    border-bottom: 2px solid $white-800;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .hotline-note p {
+    font-size: $size-content-xxsmall;
+  }
+}

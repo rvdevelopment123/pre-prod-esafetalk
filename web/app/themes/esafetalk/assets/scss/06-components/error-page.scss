@@ -1,0 +1,38 @@
+.error-page {
+  position: relative;
+  height: 100vh;
+}
+
+.error-page__bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  line-height: 0;
+  z-index: -1;
+
+  img {
+    height: 100%;
+    line-height: 0;
+  }
+}
+
+.error-page__content {
+  padding: 120px 16px;
+  text-align: center;
+
+  h5 {
+    color: $ink-900;
+    opacity: 0.6;
+  }
+
+  * {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .error-page__content {
+    margin: 0 auto;
+    max-width: 550px;
+  }
+}

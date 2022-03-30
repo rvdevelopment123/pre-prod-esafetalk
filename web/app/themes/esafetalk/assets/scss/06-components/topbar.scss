@@ -1,0 +1,25 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.topbar__logo {
+  line-height: 0;
+
+  img {
+    width: 25px;
+  }
+}
+
+.topbar__nav {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .topbar__nav {
+    flex-direction: row-reverse;
+  }
+}

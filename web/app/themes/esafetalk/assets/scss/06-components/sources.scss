@@ -1,0 +1,96 @@
+.sources-section {
+  padding: 50px 16px;
+}
+
+.sources {
+  margin: 30px auto;
+}
+
+.source {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid rgba(45,57,64,0.15);
+  border-radius: 8px;
+  font-weight: $weight-semibold;
+
+  > p {
+    margin-bottom: 5px;
+    color: $ink-800;
+    font-size: $size-content-xxsmall;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.source > span {
+  display: inline-block;
+  max-width: 100%;
+  color: rgba(45,57,64,0.5);
+  font-size: $size-content-xxxsmall;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 300ms ease;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $teal-700;
+    opacity: 0;
+    transition: all 300ms ease;
+  }
+}
+
+.source:hover,
+.source:active {
+  > span {
+    color: $teal-700;
+  }
+
+  > span::after {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sources-section {
+    padding: 50px 0;
+  }
+
+  .sources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .source {
+    display: inline-block;
+    flex: 6 1 49.998%;
+    max-width: calc(49.998% - 10px);
+
+    > p {
+      margin-bottom: 10px;
+      font-size: $size-content-xsmall;
+    }
+
+    > span {
+      font-size: $size-content-xxsmall;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .source {
+    padding: 10px 20px;
+    max-width: calc(49.998% - 15px);
+
+    > p {
+      font-size: $size-content-small;
+    }
+  }
+}

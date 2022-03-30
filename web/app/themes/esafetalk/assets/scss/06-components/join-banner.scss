@@ -1,0 +1,54 @@
+// Work With Us
+.join-banner {
+  position: relative;
+  min-height: 375px;
+}
+
+.join-banner__content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: all 200ms ease;
+
+  h2 {
+    margin-bottom: 30px;
+    max-width: 163px;
+    line-height: 1.1em;
+    transition: all 200ms ease;
+  }
+
+  .button {
+    min-width: 165px;
+  }
+}
+
+.join-banner__bg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 830px;
+  line-height: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .join-banner__content {
+    h2 {
+      margin-bottom: 50px;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .join-banner {
+    min-height: 500px;
+  }
+}

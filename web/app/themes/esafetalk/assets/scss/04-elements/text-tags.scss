@@ -1,0 +1,17 @@
+p {
+  color: $ink-900;
+  font-family: $font-primary;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: $teal-700;
+  font-family: $font-primary;
+  text-decoration: none;
+  transition: all 200ms ease;
+
+  &:hover {
+    color: $teal-800;
+    cursor: pointer;
+  }
+}

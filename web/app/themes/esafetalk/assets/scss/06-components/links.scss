@@ -1,0 +1,52 @@
+// <a class="link"><img /></a>
+.link {
+  display: inline-block;
+  position: relative;
+  color: $teal-800;
+  font-size: $size-content-xxsmall;
+  font-weight: $weight-semibold;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 200ms ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 1em;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: $teal-800;
+    opacity: 0;
+    transition: all 200ms ease;
+  }
+}
+
+.link:hover {
+  cursor: pointer;
+
+  &::after {
+    top: 1.8em;
+    opacity: 1;
+  }
+}
+
+.link--icon {
+  display: inline-flex;
+  align-items: center;
+
+  span {
+    padding-right: 10px;
+    color: $ink-800;
+    line-height: 1.5em;
+  }
+
+  > img {
+    width: 22px;
+  }
+
+  &:hover::after {
+    top: 2.1em;
+    background-color: $teal-700;
+  }
+}

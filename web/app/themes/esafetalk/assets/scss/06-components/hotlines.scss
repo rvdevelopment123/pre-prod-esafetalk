@@ -1,0 +1,37 @@
+.hotlines {
+  padding: 60px 16px;
+
+  h1 {
+    margin: 40px 0;
+  }
+
+  h6 {
+    margin: 30px 0;
+  }
+
+  p {
+    margin: 40px 0;
+  }
+
+
+  span {
+    display: inline-block;
+    margin: 20px 0;
+    color: $ink-800;
+  }
+
+  li {
+    padding-bottom: 15px;
+  }
+
+  li::marker {
+    color: $teal-700;
+  }
+
+  a {
+    color: $teal-900;
+    font-weight: $weight-medium;
+    letter-spacing: 0.04em;
+    text-decoration: underline;
+  }
+}

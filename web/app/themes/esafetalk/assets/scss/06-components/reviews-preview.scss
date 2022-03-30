@@ -1,0 +1,116 @@
+// Reviews Section Title
+.reviews-section {
+  padding: 60px 16px;
+
+  > h2, h5 {
+    text-align: center;
+  }
+
+  > h2 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .link {
+    float: right;
+    margin-top: 30px;
+  }
+}
+
+// Individual Review Card
+.review-card {
+  margin: 15px auto;
+  padding: 12px;
+  max-width: 360px;
+  height: fit-content;
+  background-color: $teal-500;
+  border-radius: 16px;
+  text-align: left;
+}
+
+.review-card:nth-child(n+4) {
+  display: none;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  p:first-child {
+    font-weight: $weight-medium;
+  }
+
+  p:last-child {
+    opacity: 0.5;
+  }
+}
+
+.reviewer__photo {
+  position: relative;
+  margin-right: 16px;
+  width: 60px;
+  height: 60px;
+
+  img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    border-radius: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-section {
+    padding: 60px 0;
+  }
+
+  .review-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .review-card {
+    margin: 0;
+    max-width: 230px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .review-card:nth-child(n+4) {
+    display: inline-block;
+  }
+
+  .review-card:nth-child(n+5) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .review-card {
+    margin-right: 10px;
+  }
+
+  .review-card:last-child {
+    margin-right: 0;
+  }
+
+  .review-card:nth-child(n+5) {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .review-card {
+    margin-right: 0;
+    max-width: 250px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .review-card {
+    max-width: 280px;
+  }
+}

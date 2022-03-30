@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  position: relative;
+}
+
+body, main {
+  margin: 0;
+  font-family: $font-primary;
+  overflow-x: hidden;
+}
